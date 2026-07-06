@@ -143,3 +143,41 @@
     setCardOpacities();
     updateInfo(projects[0]);
 }());
+
+// ── Menu overlay ────────────────────────────────────────────────
+(function () {
+    'use strict';
+
+    var menuBtn = document.querySelector('.nav-button');
+    var overlay = document.getElementById('navOverlay');
+    var closeBtn = document.getElementById('navOverlayClose');
+    if (!menuBtn || !overlay) return;
+
+    function openMenu() {
+        overlay.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        menuBtn.textContent = 'Close';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+        overlay.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        menuBtn.textContent = 'Menu';
+        document.body.style.overflow = '';
+    }
+
+    menuBtn.addEventListener('click', function () {
+        overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+
+    overlay.querySelectorAll('.nav-overlay-link').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeMenu();
+    });
+}());
