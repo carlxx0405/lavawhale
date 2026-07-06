@@ -29,12 +29,52 @@
                 </div>
 
                 <div class="hero-copy-wrap">
-                    <h1>We don't chase attention. We align it.</h1>
+                    <h1>We don't chase attention. <span class="hero-h1-underline">We align it.<svg class="hero-squiggle" viewBox="0 0 400 14" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M 3 9 C 25 5, 55 13, 100 8 C 145 3, 195 12, 240 7 C 272 3, 312 11, 358 7 C 378 5, 392 9, 400 8" stroke="#FBA10E" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span></h1>
                     <a class="hero-cta" href="#contact">Start the conversation</a>
                 </div>
             </div>
         </section>
     </header>
+
+    <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+        <button class="nav-overlay-close" id="navOverlayClose" aria-label="Close menu">
+            <span></span><span></span>
+        </button>
+        <div class="nav-overlay-panel">
+            <div class="nav-overlay-left">
+                <nav class="nav-overlay-nav">
+                    <a href="#services" class="nav-overlay-link">
+                        <span class="nav-overlay-num">01</span>
+                        <span class="nav-overlay-text">Services</span>
+                    </a>
+                    <a href="#work" class="nav-overlay-link">
+                        <span class="nav-overlay-num">02</span>
+                        <span class="nav-overlay-text">Work</span>
+                    </a>
+                    <a href="#contact" class="nav-overlay-link">
+                        <span class="nav-overlay-num">03</span>
+                        <span class="nav-overlay-text">Who We Are</span>
+                    </a>
+                    <a href="#contact" class="nav-overlay-link">
+                        <span class="nav-overlay-num">04</span>
+                        <span class="nav-overlay-text">Contact</span>
+                    </a>
+                </nav>
+            </div>
+            <div class="nav-overlay-right">
+                <p class="nav-overlay-tagline">Marketing that earns trust before it asks for attention.</p>
+                <div class="nav-overlay-info">
+                    <a href="mailto:pleiadmarketing@gmail.com" class="nav-overlay-email">pleiadmarketing@gmail.com</a>
+                    <div class="nav-overlay-socials">
+                        <a href="#" aria-label="LinkedIn"><img src="https://cdn.simpleicons.org/linkedin/ffffff" width="15" height="15" alt=""></a>
+                        <a href="#" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/ffffff" width="15" height="15" alt=""></a>
+                        <a href="#" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/ffffff" width="15" height="15" alt=""></a>
+                        <a href="#" aria-label="X"><img src="https://cdn.simpleicons.org/x/ffffff" width="15" height="15" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="concern-section">
         <div class="concern-inner">
@@ -144,5 +184,138 @@
             </li>
         </ul>
     </section>
+
+    <section id="work" class="projects-section">
+        <div class="projects-header">
+            <div class="projects-header-inner">
+                <span class="projects-label">our <em>work</em></span>
+                <p class="projects-intro">A selection of projects where strategy met execution — and both showed up.</p>
+            </div>
+        </div>
+
+        <div class="projects-stage">
+            <div class="projects-carousel-side">
+                <div class="projects-scene">
+                    <div class="projects-drum" id="projectsDrum">
+                        <div class="project-card"><img src="profile.jpg" alt="Project 1" draggable="false"></div>
+                        <div class="project-card"><img src="invoice.jpg" alt="Project 2" draggable="false"></div>
+                        <div class="project-card"><img src="land.jpg" alt="Project 3" draggable="false"></div>
+                        <div class="project-card"><img src="maid.jpg" alt="Project 4" draggable="false"></div>
+                        <div class="project-card"><img src="offices.jpg" alt="Project 5" draggable="false"></div>
+                        <div class="project-card"><img src="quotation.jpg" alt="Project 6" draggable="false"></div>
+                        <div class="project-card"><img src="receipt.jpg" alt="Project 7" draggable="false"></div>
+                        <div class="project-card"><img src="synthesis.jpg" alt="Project 8" draggable="false"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-info-side">
+                <div class="projects-info-inner" id="projectsInfo">
+                    <span class="projects-info-num" id="projNum">01</span>
+                    <h3 class="projects-info-title" id="projTitle">Brand Relaunch</h3>
+                    <p class="projects-info-client" id="projClient">Meridian Co.</p>
+                    <p class="projects-info-year" id="projYear">2024</p>
+                    <p class="projects-info-desc" id="projDesc">A full identity overhaul for a mid-market logistics firm entering a new vertical. We rebuilt their brand architecture from the ground up — new positioning, new visual language, and a campaign that landed three enterprise accounts in the first quarter.</p>
+                    <ul class="projects-info-tags" id="projTags">
+                        <li>Brand Strategy</li>
+                        <li>Visual Identity</li>
+                        <li>Campaign</li>
+                    </ul>
+                    <div class="projects-nav">
+                        <button class="projects-nav-btn" id="projPrev" aria-label="Previous project">← Prev</button>
+                        <span class="projects-nav-count"><span id="projCurrent">1</span> / 8</span>
+                        <button class="projects-nav-btn" id="projNext" aria-label="Next project">Next →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="founders-section">
+        <div class="founders-card">
+            <div class="founders-image-wrap">
+                <img src="#" alt="Founder Image" class="founders-image">
+            </div>
+            <div class="founders-copy">
+                <span class="founders-eyebrow">who we are</span>
+                <blockquote class="founders-quote">
+                    &ldquo;Marketing and selling are not the same thing. Selling asks for the transaction. Marketing builds the relationship that makes the transaction possible.&rdquo;
+                </blockquote>
+                <cite class="founders-cite">
+                    <span class="founders-name">Christian Saile Mhango</span>
+                    <span class="founders-role">Founder &amp; Director, Pleiad Marketing</span>
+                </cite>
+                <a class="founders-cta" href="#contact">Work with us &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands-section">
+        <div class="brands-inner">
+            <span class="brands-label">trusted by</span>
+            <ul class="brands-list">
+                <li class="brands-item"><img src="pajo.png" alt="Pajo"></li>
+                <li class="brands-item"><img src="synthesisLogo.png" alt="Synthesis Agriculture"></li>
+                <li class="brands-item"><img src="elite.png" alt="EliteHome Maid Agency"></li>
+                <li class="brands-item"><img src="ecoes.png" alt="Eco Executive Stay"></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer-section">
+        <div class="footer-contact">
+            <div class="footer-contact-inner">
+                <div class="footer-contact-left">
+                    <span class="footer-eyebrow">get in touch</span>
+                    <h2 class="footer-heading">Start the<br><em>conversation.</em></h2>
+                    <div class="footer-details">
+                        <a href="mailto:pleiadmarketing@gmail.com" class="footer-detail">pleiadmarketing@gmail.com</a>
+                        <span class="footer-detail">We respond within 24 hours.</span>
+                    </div>
+                </div>
+                <form class="footer-form" action="#" method="post">
+                    <div class="footer-field">
+                        <label for="f-name">Name</label>
+                        <input type="text" id="f-name" name="name" placeholder="Your name" autocomplete="name">
+                    </div>
+                    <div class="footer-field">
+                        <label for="f-email">Email</label>
+                        <input type="email" id="f-email" name="email" placeholder="your@email.com" autocomplete="email">
+                    </div>
+                    <div class="footer-field">
+                        <label for="f-message">Message</label>
+                        <textarea id="f-message" name="message" placeholder="Tell us about your project..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="footer-submit">Send message &rarr;</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bar">
+            <div class="footer-bar-inner">
+                <span class="footer-copy">&copy; 2026 Pleiad Marketing</span>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social" aria-label="LinkedIn">
+                        <img src="https://cdn.simpleicons.org/linkedin/ffffff" width="15" height="15" alt="">
+                    </a>
+                    <a href="#" class="footer-social" aria-label="Instagram">
+                        <img src="https://cdn.simpleicons.org/instagram/ffffff" width="15" height="15" alt="">
+                    </a>
+                    <a href="#" class="footer-social" aria-label="Facebook">
+                        <img src="https://cdn.simpleicons.org/facebook/ffffff" width="15" height="15" alt="">
+                    </a>
+                    <a href="#" class="footer-social" aria-label="X">
+                        <img src="https://cdn.simpleicons.org/x/ffffff" width="15" height="15" alt="">
+                    </a>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#services">Services</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
